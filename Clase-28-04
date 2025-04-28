@@ -1,0 +1,18 @@
+USE AM_CentroeducativoBD;
+create table estudiante(
+id int primary key,
+nombre varchar(50),
+fechanacimiento date
+);
+select * from estudiante;
+insert into estudiante(id,nombre,fechanacimiento) values
+(1,'Mateo','07/07/2006'),(2,'Lara','21/08/2008');
+delete from estudiante where id = 1;
+select * from estudiante;
+CREATE TABLE materias(
+codigo INT PRIMARY KEY,
+nombre VARCHAR(50)
+);
+select * from materias;
+insert into materias(codigo,nombre) values (20,'Base de Datos');
+select * from materias;
